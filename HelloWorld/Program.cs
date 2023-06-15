@@ -10,11 +10,14 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter Your Name: ");
-            string Name = Console.ReadLine();
-            Console.Write("Enter Your Age: ");
-            string Age = Console.ReadLine();
-            Console.WriteLine("Hello " + Name + " Your are " + Age + " Year Old");            Console.ReadLine();
+            NameAge("Emran",28);
+            Console.ReadLine();
+        }
+
+        //method call
+        static void NameAge(string Name,int Age)
+        {
+            Console.WriteLine("Hello "+Name+" You Are "+Age);
         }
     }
 }
